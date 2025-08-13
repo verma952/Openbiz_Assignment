@@ -1,0 +1,277 @@
+{
+  "scrapedAt": "2025-08-13T10:18:41.000Z",
+  "source": "https://udyamregistration.gov.in/UdyamRegistration.aspx",
+  "counts": {
+    "total": 10,
+    "step1": 3,
+    "step2": 7
+  },
+  "regexLibrary": {
+    "aadhaar": "^\\d{12}$",
+    "pan": "^[A-Z]{5}[0-9]{4}[A-Z]{1}$"
+  },
+  "step1": [
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "ctl00$ContentPlaceHolder1$txtadharno",
+      "id": "ctl00_ContentPlaceHolder1_txtadharno",
+      "label": "1. Aadhaar Number/ आधार संख्या",
+      "placeholder": "Your Aadhaar No",
+      "required": false,
+      "pattern": null,
+      "minLength": null,
+      "maxLength": 12,
+      "dataset": {},
+      "attributes": {
+        "autocomplete": "Off",
+        "inputmode": null
+      },
+      "options": null,
+      "section": "Aadhaar Verification With OTP",
+      "visibility": {
+        "hidden": false,
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "step": 1
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "ctl00$ContentPlaceHolder1$txtownername",
+      "id": "ctl00_ContentPlaceHolder1_txtownername",
+      "label": "2. Name of Entrepreneur / उद्यमी का नाम",
+      "placeholder": "Name as per Aadhaar",
+      "required": false,
+      "pattern": null,
+      "minLength": null,
+      "maxLength": 100,
+      "dataset": {},
+      "attributes": {
+        "autocomplete": "Off",
+        "inputmode": null
+      },
+      "options": null,
+      "section": "Aadhaar Verification With OTP",
+      "visibility": {
+        "hidden": false,
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "step": 1
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "ctl00$ContentPlaceHolder1$chkDecarationA",
+      "id": "ctl00_ContentPlaceHolder1_chkDecarationA",
+      "label": "",
+      "placeholder": "",
+      "required": false,
+      "pattern": null,
+      "minLength": null,
+      "maxLength": null,
+      "dataset": {},
+      "attributes": {
+        "autocomplete": null,
+        "inputmode": null
+      },
+      "options": null,
+      "section": "Aadhaar Verification With OTP",
+      "visibility": {
+        "hidden": false,
+        "display": "inline-block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "step": 1
+    }
+  ],
+  "step2": [
+    {
+      "tag": "input",
+      "type": "hidden",
+      "name": "__EVENTTARGET",
+      "id": "__EVENTTARGET",
+      "label": "",
+      "placeholder": "",
+      "required": false,
+      "pattern": null,
+      "minLength": null,
+      "maxLength": null,
+      "dataset": {},
+      "attributes": {
+        "autocomplete": null,
+        "inputmode": null
+      },
+      "options": null,
+      "section": "",
+      "visibility": {
+        "hidden": true,
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "step": 2
+    },
+    {
+      "tag": "input",
+      "type": "hidden",
+      "name": "__EVENTARGUMENT",
+      "id": "__EVENTARGUMENT",
+      "label": "",
+      "placeholder": "",
+      "required": false,
+      "pattern": null,
+      "minLength": null,
+      "maxLength": null,
+      "dataset": {},
+      "attributes": {
+        "autocomplete": null,
+        "inputmode": null
+      },
+      "options": null,
+      "section": "",
+      "visibility": {
+        "hidden": true,
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "step": 2
+    },
+    {
+      "tag": "input",
+      "type": "hidden",
+      "name": "__VIEWSTATE",
+      "id": "__VIEWSTATE",
+      "label": "",
+      "placeholder": "",
+      "required": false,
+      "pattern": null,
+      "minLength": null,
+      "maxLength": null,
+      "dataset": {},
+      "attributes": {
+        "autocomplete": null,
+        "inputmode": null
+      },
+      "options": null,
+      "section": "",
+      "visibility": {
+        "hidden": true,
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "step": 2
+    },
+    {
+      "tag": "input",
+      "type": "hidden",
+      "name": "__VIEWSTATEGENERATOR",
+      "id": "__VIEWSTATEGENERATOR",
+      "label": "",
+      "placeholder": "",
+      "required": false,
+      "pattern": null,
+      "minLength": null,
+      "maxLength": null,
+      "dataset": {},
+      "attributes": {
+        "autocomplete": null,
+        "inputmode": null
+      },
+      "options": null,
+      "section": "",
+      "visibility": {
+        "hidden": true,
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "step": 2
+    },
+    {
+      "tag": "input",
+      "type": "hidden",
+      "name": "__VIEWSTATEENCRYPTED",
+      "id": "__VIEWSTATEENCRYPTED",
+      "label": "",
+      "placeholder": "",
+      "required": false,
+      "pattern": null,
+      "minLength": null,
+      "maxLength": null,
+      "dataset": {},
+      "attributes": {
+        "autocomplete": null,
+        "inputmode": null
+      },
+      "options": null,
+      "section": "",
+      "visibility": {
+        "hidden": true,
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "step": 2
+    },
+    {
+      "tag": "input",
+      "type": "hidden",
+      "name": "__EVENTVALIDATION",
+      "id": "__EVENTVALIDATION",
+      "label": "",
+      "placeholder": "",
+      "required": false,
+      "pattern": null,
+      "minLength": null,
+      "maxLength": null,
+      "dataset": {},
+      "attributes": {
+        "autocomplete": null,
+        "inputmode": null
+      },
+      "options": null,
+      "section": "",
+      "visibility": {
+        "hidden": true,
+        "display": "none",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "step": 2
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "checkbox",
+      "id": "checkbox",
+      "label": "",
+      "placeholder": "",
+      "required": false,
+      "pattern": null,
+      "minLength": null,
+      "maxLength": null,
+      "dataset": {},
+      "attributes": {
+        "autocomplete": null,
+        "inputmode": null
+      },
+      "options": null,
+      "section": "Accessibility options",
+      "visibility": {
+        "hidden": true,
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "0"
+      },
+      "step": 2
+    }
+  ]
+}

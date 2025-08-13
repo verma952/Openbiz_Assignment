@@ -1,0 +1,80 @@
+[
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "ctl00$ContentPlaceHolder1$txtadharno",
+    "id": "ctl00_ContentPlaceHolder1_txtadharno",
+    "label": "1. Aadhaar Number/ आधार संख्या",
+    "placeholder": "Your Aadhaar No",
+    "required": false,
+    "pattern": null,
+    "minLength": null,
+    "maxLength": 12,
+    "dataset": {},
+    "attributes": {
+      "autocomplete": "Off",
+      "inputmode": null
+    },
+    "options": null,
+    "section": "Aadhaar Verification With OTP",
+    "visibility": {
+      "hidden": false,
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "step": 1
+  },
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "ctl00$ContentPlaceHolder1$txtownername",
+    "id": "ctl00_ContentPlaceHolder1_txtownername",
+    "label": "2. Name of Entrepreneur / उद्यमी का नाम",
+    "placeholder": "Name as per Aadhaar",
+    "required": false,
+    "pattern": null,
+    "minLength": null,
+    "maxLength": 100,
+    "dataset": {},
+    "attributes": {
+      "autocomplete": "Off",
+      "inputmode": null
+    },
+    "options": null,
+    "section": "Aadhaar Verification With OTP",
+    "visibility": {
+      "hidden": false,
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "step": 1
+  },
+  {
+    "tag": "input",
+    "type": "checkbox",
+    "name": "ctl00$ContentPlaceHolder1$chkDecarationA",
+    "id": "ctl00_ContentPlaceHolder1_chkDecarationA",
+    "label": "",
+    "placeholder": "",
+    "required": false,
+    "pattern": null,
+    "minLength": null,
+    "maxLength": null,
+    "dataset": {},
+    "attributes": {
+      "autocomplete": null,
+      "inputmode": null
+    },
+    "options": null,
+    "section": "Aadhaar Verification With OTP",
+    "visibility": {
+      "hidden": false,
+      "display": "inline-block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "step": 1
+  }
+]

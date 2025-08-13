@@ -1,0 +1,21 @@
+
+FROM node:18-alpine
+
+# This is where our app's files will live
+WORKDIR /app
+
+# This is done first to leverage Docker's caching. If these files don't change,
+ 
+COPY package*.json ./
+
+# Step 4: Install the application's dependencies
+RUN npm install
+
+# Step 5: Copy the rest of the backend source code into the container
+COPY . .
+
+# Step 6: Expose the port the server runs on
+EXPOSE 5000
+
+# Step 7: Define the command to run the application
+CMD ["node", "server.js"]

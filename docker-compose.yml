@@ -1,0 +1,33 @@
+# Specify the Docker Compose file format version
+version: '3.8'
+
+# Define the services (containers) that make up your application
+services:
+  # The Backend Service
+  backend:
+    # Tells Docker Compose to build the image from the 'backend' folder
+    build: ./backend
+    # Name the container for easier identification
+    container_name: registration_app_backend
+    # Restart the container automatically if it fails
+    restart: always
+    ports:
+      # Map port 5000 on your local machine to port 5000 in the container
+      - "5000:5000"
+    environment:
+      # IMPORTANT: Pass your Supabase key as an environment variable
+      # This is more secure than hardcoding it in your server.js
+      - SUPABASE_KEY=${}
+
+  # The Frontend Service
+  frontend:
+    # Build the image from the 'frontend' folder
+    build: ./frontend
+    container_name: registration_app_frontend
+    restart: always
+    ports:
+      # Map port 3000 on your local machine to port 80 in the container
+      - "3000:80"
+    # This ensures the frontend waits for the backend to be ready before starting
+    depends_on:
+      - backend

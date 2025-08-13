@@ -1,0 +1,29 @@
+# --- Build Stage ---
+# Step 1: Use a Node.js image to build the React app
+FROM node:18-alpine as builder
+
+# Set the working directory
+WORKDIR /app
+
+# Copy package.json and install dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy the rest of the frontend source code
+COPY . .
+
+# Step 2: Build the React app for production
+# This creates a highly optimized 'build' folder with static files
+RUN npm run build
+
+# --- Production Stage ---
+# Step 3: Use a lightweight web server (nginx) to serve the built files
+FROM nginx:stable-alpine
+
+# Step 4: Copy the optimized build output from the 'builder' stage
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Step 5: Expose the default nginx port
+EXPOSE 80
+
+# Step 6: The default nginx command to start the server will run automatically

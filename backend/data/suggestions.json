@@ -1,0 +1,23 @@
+{
+  "cities": [
+    "Mumbai", 
+    "Delhi", 
+    "Bengaluru", 
+    "Chennai", 
+    "Kolkata", 
+    "Pune", 
+    "Hyderabad", 
+    "Ahmedabad",
+    "Jaipur",
+    "Lucknow"
+  ],
+  "plantNames": [
+    "Main Production Unit", 
+    "Warehouse Alpha", 
+    "Secondary Plant", 
+    "R&D Facility", 
+    "Logistics Hub",
+    "North India Division",
+    "Southern Manufacturing Plant"
+  ]
+}

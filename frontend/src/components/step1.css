@@ -1,0 +1,87 @@
+.step1-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  padding: 0;
+  overflow: hidden;
+}
+
+.step1-header {
+  background: #007bff;
+  color: white;
+  padding: 12px 16px;
+  font-weight: bold;
+}
+
+.step1-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .step1-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+.step1-field label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.step1-field input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.step1-field input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.required-text {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.info-list {
+  font-size: 0.9rem;
+  padding: 0 16px;
+  margin: 8px 0 0;
+}
+
+.info-list li {
+  margin-bottom: 4px;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 16px;
+  font-size: 0.85rem;
+}
+
+.otp-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  margin: 0 16px 16px;
+  cursor: pointer;
+}
+
+.otp-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}

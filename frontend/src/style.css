@@ -1,0 +1,80 @@
+:root {
+  --bg: #f7f8fa;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --primary: #0d6efd;
+  --error: #dc2626;
+  --ring: rgba(13,110,253,0.25);
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+
+.container { max-width: 960px; margin: 0 auto; padding: 16px; }
+
+.pageHeader { margin: 8px 0 16px; }
+.pageHeader h1 { font-size: 1.25rem; margin: 0; }
+.subtitle { color: var(--muted); margin: 4px 0 0; }
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+
+.gridForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .gridForm { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 960px) {
+  .gridForm { grid-template-columns: repeat(12, 1fr); }
+  .field { grid-column: span 6; }
+}
+
+.field label { display: block; margin-bottom: 6px; font-weight: 600; }
+.field input, .field select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+  background: #fff;
+}
+.field input:focus, .field select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+.hasError input, .hasError select { border-color: var(--error); }
+.error { color: var(--error); font-size: 0.85rem; margin-top: 6px; }
+
+.actions { display: flex; gap: 10px; margin-top: 14px; justify-content: flex-end; }
+.btn { border: 0; padding: 10px 16px; border-radius: 8px; cursor: pointer; background: var(--text); color: white; }
+.btn.primary { background: var(--primary); }
+.btn.secondary { background: #6b7280; }
+
+.progressWrap {
+  position: relative; display: flex; gap: 16px; align-items: center;
+  margin: 8px 0 14px;
+}
+.step { display: flex; align-items: center; gap: 8px; color: var(--muted); }
+.step .dot {
+  width: 28px; height: 28px; border-radius: 50%; background: #e5e7eb; display: grid; place-items: center; font-weight: 700;
+}
+.step.active { color: var(--text); }
+.step.active .dot { background: var(--primary); color: #fff; }
+
+.bar {
+  position: absolute; left: 34px; right: 34px; height: 4px; background: #e5e7eb; top: 12px; z-index: -1;
+}
+.bar.filled { background: linear-gradient(90deg, var(--primary) 0%, var(--primary) 100%); }

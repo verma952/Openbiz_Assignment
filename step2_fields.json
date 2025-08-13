@@ -1,0 +1,183 @@
+[
+  {
+    "tag": "select",
+    "type": "select",
+    "name": "ctl00$ContentPlaceHolder1$ddlTypeofOrg",
+    "id": "ctl00_ContentPlaceHolder1_ddlTypeofOrg",
+    "label": "",
+    "placeholder": "",
+    "required": false,
+    "maxLength": null,
+    "options": [
+      {
+        "value": "0",
+        "text": "Type of Organisation / संगठन के प्रकार",
+        "selected": false
+      },
+      {
+        "value": "1",
+        "text": "1. Proprietary / एकल स्वामित्व",
+        "selected": false
+      },
+      {
+        "value": "2",
+        "text": "2. Hindu Undivided Family / हिंदू अविभाजित परिवार (एचयूएफ)",
+        "selected": false
+      },
+      {
+        "value": "3",
+        "text": "3. Partnership / पार्टनरशिप",
+        "selected": false
+      },
+      {
+        "value": "4",
+        "text": "4. Co-Operative / सहकारी",
+        "selected": false
+      },
+      {
+        "value": "5",
+        "text": "5. Private Limited Company / प्राइवेट लिमिटेड कंपनी",
+        "selected": false
+      },
+      {
+        "value": "6",
+        "text": "6. Public Limited Company / पब्लिक लिमिटेड कंपनी",
+        "selected": false
+      },
+      {
+        "value": "7",
+        "text": "7. Self Help Group / स्वयं सहायता समूह",
+        "selected": false
+      },
+      {
+        "value": "9",
+        "text": "8. Limited Liability Partenership / सीमित दायित्व भागीदारी",
+        "selected": false
+      },
+      {
+        "value": "10",
+        "text": "9. Society / सोसाईटी",
+        "selected": false
+      },
+      {
+        "value": "11",
+        "text": "10. Trust / ट्रस्ट",
+        "selected": false
+      },
+      {
+        "value": "8",
+        "text": "11. Others / अन्य",
+        "selected": true
+      }
+    ],
+    "disabled": true
+  },
+  {
+    "tag": "input",
+    "type": "radio",
+    "name": "ctl00$ContentPlaceHolder1$rbpanyesno",
+    "id": "ctl00_ContentPlaceHolder1_rbpanyesno_0",
+    "label": "Yes",
+    "placeholder": "",
+    "required": false,
+    "maxLength": null,
+    "options": null,
+    "disabled": true
+  },
+  {
+    "tag": "input",
+    "type": "radio",
+    "name": "ctl00$ContentPlaceHolder1$rbpanyesno",
+    "id": "ctl00_ContentPlaceHolder1_rbpanyesno_1",
+    "label": "No",
+    "placeholder": "",
+    "required": false,
+    "maxLength": null,
+    "options": null,
+    "disabled": true
+  },
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "ctl00$ContentPlaceHolder1$txtPan",
+    "id": "ctl00_ContentPlaceHolder1_txtPan",
+    "label": "",
+    "placeholder": "Enter Pan Number",
+    "required": false,
+    "maxLength": "10",
+    "options": null,
+    "disabled": true
+  },
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "ctl00$ContentPlaceHolder1$txtPanName",
+    "id": "ctl00_ContentPlaceHolder1_txtPanName",
+    "label": "",
+    "placeholder": "Name as per PAN",
+    "required": false,
+    "maxLength": "100",
+    "options": null,
+    "disabled": true
+  },
+  {
+    "tag": "input",
+    "type": "text",
+    "name": "ctl00$ContentPlaceHolder1$txtdob",
+    "id": "ctl00_ContentPlaceHolder1_txtdob",
+    "label": "",
+    "placeholder": "DD/MM/YYYY",
+    "required": false,
+    "maxLength": null,
+    "options": null,
+    "disabled": true
+  },
+  {
+    "tag": "input",
+    "type": "radio",
+    "name": "ctl00$ContentPlaceHolder1$rbdDOB",
+    "id": "ctl00_ContentPlaceHolder1_rbdDOB_0",
+    "label": "DOB",
+    "placeholder": "",
+    "required": false,
+    "maxLength": null,
+    "options": null,
+    "disabled": true
+  },
+  {
+    "tag": "input",
+    "type": "radio",
+    "name": "ctl00$ContentPlaceHolder1$rbdDOB",
+    "id": "ctl00_ContentPlaceHolder1_rbdDOB_1",
+    "label": "DOI",
+    "placeholder": "",
+    "required": false,
+    "maxLength": null,
+    "options": null,
+    "disabled": true
+  },
+  {
+    "tag": "input",
+    "type": "checkbox",
+    "name": "ctl00$ContentPlaceHolder1$chkDecarationP",
+    "id": "ctl00_ContentPlaceHolder1_chkDecarationP",
+    "label": "",
+    "placeholder": "",
+    "required": false,
+    "maxLength": null,
+    "options": null,
+    "disabled": true
+  },
+  {
+    "tag": "input",
+    "type": "submit",
+    "name": "ctl00$ContentPlaceHolder1$btnGetPanData",
+    "id": "ctl00_ContentPlaceHolder1_btnGetPanData",
+    "label": "",
+    "placeholder": "",
+    "required": false,
+    "maxLength": null,
+    "options": null,
+    "disabled": false
+  }
+]
